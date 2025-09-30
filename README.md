@@ -22,10 +22,8 @@ shadcn/ui + Tailwind.
 
 ## Демо и репозиторий
 
-> Ссылки добавьте после деплоя
-
 * Прод: `https://<your-app>.vercel.app/`
-* Репозиторий: `https://github.com/<you>/<repo>`
+* Репозиторий: `https://github.com/Berlin69/render-types`
 
 ## Стек и решения
 
@@ -99,12 +97,7 @@ shadcn/ui + Tailwind.
 
 **Цель:** показать рабочее WS‑соединение без бэкенда.
 
-* По умолчанию используется публичный **echo WebSocket**: `wss://socketsbay.com/wss/v2/1/demo/`.
-* Фоллбэки (указать вручную в `.env.local`, если основной недоступен):
-
-    * `wss://ws.ifelse.io`
-    * `wss://ws.vi-server.org/mirror`
-    * `wss://echo-websocket.fly.dev`
+* По умолчанию используется публичный **echo WebSocket**: `wss://ws.ifelse.io`.
 * Страница `/ws-demo`:
 
     * статус соединения, поле ввода, отправка сообщений, лог `[send]/[recv]`, авто‑reconnect (экспоненциальный бэкофф,
@@ -135,10 +128,8 @@ npm run dev
 ## Переменные окружения
 
 ```
-NEXT_PUBLIC_WS_URL=wss://socketsbay.com/wss/v2/1/demo/
+NEXT_PUBLIC_WS_URL=wss://ws.ifelse.io
 ```
-
-> При деплое на Vercel добавьте эту переменную в **Project Settings → Environment Variables**.
 
 ## Деплой на Vercel
 
